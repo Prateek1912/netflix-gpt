@@ -15,13 +15,13 @@ export const GptSearchBar = () => {
       API_OPTIONS
     );
     const json = await data.json();
-    console.log(json.results);
+    
     return json.results;
   }
 
   const handleGptSearchClick = async () => {
     const tmdbResults = await searchTMDBMovie(searchText.current.value);
-    console.log(tmdbResults);
+   
     dispatch(addSearchedMovies({ movies: tmdbResults, movieName: searchText.current.value })); 
   }
 

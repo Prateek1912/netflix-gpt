@@ -18,15 +18,17 @@ const Browse = () => {
 
     return (
       <div>
-        <Header></Header>
-        {showGptSearch ? (
+        <Header forPath={"browse"}></Header>
+        <MainConatiner />
+        <SecondaryContainer />
+        {/* {showGptSearch ? (
           <GptSearch />
         ) : (
           <>
             <MainConatiner />
             <SecondaryContainer />
-          </>
-        )}
+          </> */}
+        
       </div>
     );
 }
